@@ -8,7 +8,7 @@ var setZeroes = function(matrix) {
             // Check if the cell has zero in it
             if (matrix[row][col] === 0) {
                 for (let i = 0; i < matrix[0].length; i++) {
-                    // Flag the entire column to -1 if not zero 
+                    // Flag the entire column to -1001 if not zero 
                     if (matrix[row][i] !== 0) {
                         matrix[row][i] = -1001
                     }
@@ -22,7 +22,7 @@ var setZeroes = function(matrix) {
             // Check if the cell has zero in it
             if (matrix[row][col] === 0) {
                 for (let i = 0; i < matrix.length; i++) {
-                    // Flag the entire row to -1 if not zero 
+                    // Flag the entire row to -1001 if not zero 
                     if (matrix[i][col] !== 0) {
                         matrix[i][col] = -1001
                     }
